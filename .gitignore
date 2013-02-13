@@ -1,7 +1,10 @@
 
-#ignore backups
+# ignore backups
 *~
 
-#ignore folders created by sbt
+# ignore folders created by sbt
 project/project
 project/target
+
+# ignore the target
+target

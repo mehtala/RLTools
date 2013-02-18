@@ -45,7 +45,6 @@ object Utils {
 
   // Helper function to perform x, f(x), f(f(x)), ...
   private def repeatedly[T] (n: Int, fn: T => T)(x: T): T= {
-	println("episode: " + n)
     if (n>0) repeatedly(n-1, fn)(fn(x))
     else x
   }

@@ -77,7 +77,7 @@ class CliffWalker(nRows: Int, nCols: Int)
     if (row == 0 && col == nCols - 1) 1.0
     else {
       if (row == 0 && col > 0) -1
-      else 0
+      else -0.1
     }
   }
   

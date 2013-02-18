@@ -19,8 +19,10 @@ object ExampleBuild extends Build {
     scalaVersion := appScalaVersion.fullVersionStr,
     scalacOptions := localScalacOptions
   )
+  
 
   lazy val root = Project(id = "RLTools",
     base = file("."),
-    settings = Project.defaultSettings ++ localSettings)
+    settings = Project.defaultSettings ++ localSettings ++ 
+      Seq(libraryDependencies += "org.scalatest" % "scalatest_2.10" % "1.9.1" % "test"))
 }
